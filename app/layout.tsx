@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -24,12 +24,17 @@ export const metadata: Metadata = {
     description: "Transform your marketing strategy with our comprehensive AI-powered platform.",
     creator: "@admybrand",
   },
-  viewport: "width=device-width, initial-scale=1",
+};
+
+// ✅ Move viewport out of metadata
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#111827" },
   ],
-}
+};
 
 export default function RootLayout({
   children,
@@ -46,7 +51,6 @@ export default function RootLayout({
         <style
           dangerouslySetInnerHTML={{
             __html: `
-              /* Critical CSS for immediate rendering */
               body { 
                 font-family: system-ui, -apple-system, sans-serif; 
                 margin: 0; 
@@ -67,7 +71,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased bg-white dark:bg-gray-900 transition-colors duration-300">{children}</body>
+      <body className="antialiased bg-white dark:bg-gray-900 transition-colors duration-300">
+        {children}
+      </body>
     </html>
   )
 }
