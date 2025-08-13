@@ -7,7 +7,7 @@ This project showcases **cutting-edge design trends (2025)** like glassmorphism,
 ---
 
 ## 🚀 Live Demo  
-[🔗 View Live on Vercel](https://admybrand-landing-page-git-main-puneethgshegde-3244s-projects.vercel.app?_vercel_share=fsZStDovaG2UWPctaZPj4ov9A8hyE2oG) 
+[🔗 View Live on netlify](https://689c9edc4de262754b6065f3--addmybrandassignment.netlify.app/) 
 
 ---
 
@@ -86,7 +86,7 @@ npm start
 ---
 
 ## 🔗 Deployment  
-Deployed seamlessly on **[Vercel](https://vercel.com)** for production-ready hosting.  
+Deployed seamlessly on **[netlify ](https://www.netlify.com/)** for production-ready hosting.  
 
 ---
 
