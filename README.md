@@ -97,7 +97,7 @@ Deployed seamlessly on **[netlify ](https://www.netlify.com/)** for production-r
 ---
 
 ## 📜 License  
-This project is licensed under the MIT License.  
+This work is shared for educational and hiring‑assignment purposes.
 
 ---
 
